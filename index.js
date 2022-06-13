@@ -37,7 +37,7 @@ refreshBt.addEventListener("click", () => {
     element.remove();
   });
   fetch(
-    "https://airime-default-rtdb.asia-southeast1.firebasedatabase.app/testing.json"
+    "https://airhat-b6c5f-default-rtdb.asia-southeast1.firebasedatabase.app/chatdata.json"
   )
     .then((response) => {
       return response.json();
@@ -64,7 +64,7 @@ sendBt.addEventListener("click", () => {
   let newData;
 
   fetch(
-    "https://airime-default-rtdb.asia-southeast1.firebasedatabase.app/testing.json"
+    "https://airhat-b6c5f-default-rtdb.asia-southeast1.firebasedatabase.app/chatdata.json"
   )
     .then((response) => {
       return response.json();
@@ -81,7 +81,7 @@ sendBt.addEventListener("click", () => {
     })
     .then(() => {
       fetch(
-        "https://airime-default-rtdb.asia-southeast1.firebasedatabase.app/testing.json",
+        "https://airhat-b6c5f-default-rtdb.asia-southeast1.firebasedatabase.app/chatdata.json",
         {
           method: "put",
           headers: {
